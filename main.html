@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+
+
+    <title>Voyagers Shipping Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Voyagers Shipping Company is a company to transfer cargo, passengers and other stuff and making sure that everything
+is safely and comfortably transferred." />
+    <!-- Default-JavaScript-File -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- //Default-JavaScript-File -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script defer src="js/jquery.flexslider.js"></script>
+    <!-- gallery -->
+    <link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
+    <!-- //gallery -->
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+    <!--Start-slider-script-->
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--End-slider-script-->
+
+</head>
+<!-- Head -->
+
+<body>
+<!-- banner -->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    var config = {
+        apiKey: "AIzaSyCmqAJWuUFtNClqheBolydpycxO1k0WQ5o",
+        authDomain: "voyagers-600ae.firebaseapp.com",
+        databaseURL: "https://voyagers-600ae.firebaseio.com",
+        projectId: "voyagers-600ae",
+        storageBucket: "voyagers-600ae.appspot.com",
+        messagingSenderId: "810913473943"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<div class="banner">
+    <!-- <div class="container"> -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header navbar-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1><a class="navbar-brand" href="index.html">Voyagers</a></h1>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://localhost:63342/Voyagers/Sign%20in/web/signIn.html?_ijt=h6nf7df3jl6qgutg5cj9ts43mn" class="button"> Login</a> </li>
+
+                <li><a class="active scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#news">News & Media</a></li>
+                <li><a class="scroll" href="#gallery">Our Business</a></li>
+                <li><a class="scroll" href="#stats"> Careers </a></li>
+                <li><a class="scroll" href="#contact">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- </div> -->
+
+    <ul class="top-links">
+        <li><a href="https://www.facebook.com/profile.php?id=100001536634507" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/ayadwala" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/104107845495198788678" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/wala-a-awad-58a24a16b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+</div>
+
+<!-- //banner -->
+<!-- Slider -->
+<div class="slider w3layouts agileits">
+    <ul class="rslides w3layouts agileits" id="slider">
+        <li>
+            <img src="images/wow.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3> Voyager's Mission.</h3>
+                <p>Through partnership, innovation and a relentless focus on high performance and efficiency, we maximize the
+                    value of transportation resources.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal">read more</a>
+            </div>
+        </li>
+        <li>
+            <img src="images/wow2.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3> Voyager's Vision.</h3>
+                <p>We work together in order to provide the most reliable and comfortable transportation without
+                    harming environment or consuming more resources.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal1">read more</a>
+            </div>
+        </li>
+        <li>
+            <img src="images/wow3.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3>Voyager's Strategy.</h3>
+                <p>We work together, as a one integrated team to ensure a more profitable upstream, a more valuable
+                    downstream and a more sustainable and economic transportation.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal2">read more</a>
+            </div>
+        </li>
+        <li>
+            <img src="images/wow4.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3>Voyagers  Everywhere.</h3>
+                <p>Our trips go across the world all through the year. They reach every shore and cost everywhere.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal3">read more</a>
+            </div>
+        </li>
+        <li>
+            <img src="images/wow5.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3>Environmentally Friendly Voyages.</h3>
+                <p>We take a proactive approach towards environmental protection, constantly assessing and activly managing all
+                    environmental risks and impacts.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal4">read more</a>
+            </div>
+        </li>
+        <li>
+            <img src="images/wow6.jpg" alt="Affiliation">
+            <div class="layer w3layouts agileits">
+                <h3>Safety Is Ensured.</h3>
+                <p>We place great emphasis on the proactive identification and mitigation of all health and safety risks, and
+                    manage
+                    all incidents and crises through an affective emergency system.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal5">read more</a>
+            </div>
+        </li>
+    </ul>
+    <!-- banner bottom -->
+    <div class="banner-grids">
+        <div class="container">
+            <div class="col-md-4 banner-grid1">
+                <a href="#" data-toggle="modal" data-target="#myModal6">
+                    <h3>Cargo, passengers, liquid,and natural gas transportation.</h3>
+                </a>
+                <h4> </h4>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4 banner-grid2">
+                <a href="#" data-toggle="modal" data-target="#myModal7">
+                    <h3> More than 300 crew members on each boat.</h3>
+                </a>
+                <h4></h4>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4 banner-grid3">
+                <a href="#" data-toggle="modal" data-target="#myModal8">
+                    <h3> More than 200 boats, yachts and ships in service.</h3>
+                </a>
+                <h4></h4>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- banner bottom -->
+</div>
+<!-- //Slider -->
+<!-- about -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="heading">
+            <h2>about</h2>
+        </div>
+        <div class="col-md-8 about-left">
+            <div class="about-left-grids">
+                <h3>We are one of the world's leading sea transportation companies, and a primary catalyst in USA's growth.</h3>
+                <div class="about-left-top">
+                    <div class="col-md-2 gridicon">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-4 gridtext">
+                        <h4>Berth</h4>
+                        <p>Our ships anchorage on every main shore across the world.</p>
+                    </div>
+                    <div class="col-md-2 gridicon">
+                        <i class="fa fa-fax" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="col-md-4 gridtext">
+                        <h4>Inquiries and Reservations </h4>
+                        <p>Reservations and inquiries are accepted directly, by phone calls and emails.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-left-bottom">
+                    <div class="col-md-2 gridicon">
+                        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-4 gridtext">
+                        <h4>Strategy </h4>
+                        <p>More profitable upstream, valubale downstream and more sustainable & economic gas supply..</p>
+                    </div>
+                    <div class="col-md-2 gridicon">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-4 gridtext">
+                        <h4> Awards </h4>
+                        <p>Voyagers is the best transportation company on earth.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 about-right">
+            <img src="images/about.jpg" alt="" />
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+<!-- about -->
+<!-- Team -->
+<div class="teamw3agile" id="teamw3agile">
+    <div class="container">
+        <h3>Team</h3>
+
+        <div class="teamw3agile-grids">
+            <div class="col-md-4 col-sm-4 teamw3agile-grid">
+                <div class="pic">
+                    <div class="stack twisted">
+                        <img src="images/raghad.jpg" alt="Tout dé Cake" class="img-responsive">
+                    </div>
+                    <div class="pic-caption top-to-bottom">
+                        <h4>Raghad AL</h4>
+                        <!-- Social-Icons -->
+                        <div class="social wthree">
+                            <ul class="social-icons agileinfo">
+                                <li><a href="https://www.facebook.com/profile.php?id=100001536634507" class="facebook w3ls" target="_blank" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/RaghadA82499271" class="twitter w3l" target="_blank" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/" class="googleplus w3" target="_blank" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- //Social-Icons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 teamw3agile-grid">
+                <div class="pic">
+                    <div class="stack twisted">
+                        <img src="images/wala.jpg" alt="Tout dé Cake" class="img-responsive">
+                    </div>
+                    <div class="pic-caption top-to-bottom">
+                        <h4>Wala Ayad</h4>
+                        <!-- Social-Icons -->
+                        <div class="social wthree">
+                            <ul class="social-icons agileinfo">
+                                <li><a href="https://www.facebook.com/ayadwala" class="facebook w3ls" target="_blank" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/ayadwala?lang=en" class="twitter w3l" target="_blank" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/104107845495198788678" class="googleplus w3" target="_blank" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- //Social-Icons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 teamw3agile-grid">
+                <div class="pic">
+                    <div class="stack twisted">
+                        <img src="images/alia.jpg" alt="Tout dé Cake" class="img-responsive">
+                    </div>
+                    <div class="pic-caption top-to-bottom">
+                        <h4>Alia Tuqan</h4>
+                        <!-- Social-Icons -->
+                        <div class="social wthree">
+                            <ul class="social-icons agileinfo">
+                                <li><a  target="_blank" href="https://www.facebook.com/AliaTuqan1?jazoest=26510012056901225476539889875199779853103575610955651065551117867654901061021117171104981007611552706667655865100121103535111410651119545690113119100120119971107711911253111771216545786950681107010965555610498689588113119" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/dancinggwaves" class="twitter w3l"  target="_blank" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/104107845495198788678" class="googleplus w3"  target="_blank" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- //Social-Icons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+</div>
+<!-- //Team -->
+
+<!-- news -->
+<section class="news" id="news">
+    <div class="container">
+        <div class="heading">
+            <h3>News</h3>
+        </div>
+        <div class="news-grids">
+            <div class="col-md-4 news-grid1">
+                <img src="images/i.jpg" alt="" />
+             <!--   <div class="absolute">
+                    <div class="absolute-left">
+                        <p class="p1"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 9/12/2018</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="absolute-right">
+                        <p class="left"><i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="span1">550</span></p>
+                        <p class="right"><i class="fa fa-thumbs-down" aria-hidden="true"></i> <span class="span1">20</span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div > -->
+                <h3>Sea Weather.</h3>
+                <p> PassageWeather was developed out of the need for accurate, reliable and easy to use weather forecasts.</p>
+                <div class="more">
+                    <a href="https://passageweather.com" target="_blank" class="button">More About Weather</a>
+
+
+                </div>
+            </div>
+            <div class="col-md-4 news-grid1">
+                <img src="images/stock.jpg" alt="" />
+                <!--<div class="absolute">
+                    <div class="absolute-left">
+                        <p class="p1"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 8/12/2018</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="absolute-right">
+                        <p class="left"><i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="span1">500</span></p>
+                        <p class="right"><i class="fa fa-thumbs-down" aria-hidden="true"></i> <span class="span1">20</span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> -->
+                <h3>Stock Market and Prices.</h3>
+                <p> Prices of natural gas, oil, petrol, diesel and others on stock market. </p>
+                <div class="more">
+                    <a href="https://bloomberg.com/markets/stocks" target="_blank" class="button">More About Stocks</a>
+
+                </div>
+            </div>
+            <div class="col-md-4 news-grid1">
+                <img src="images/emp.jpg" alt="" />
+               <!-- <div class="absolute">
+                    <div class="absolute-left">
+                        <p class="p1"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2/12/2018</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="absolute-right">
+                        <p class="left"><i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="span1">400</span></p>
+                        <p class="right"><i class="fa fa-thumbs-down" aria-hidden="true"></i> <span class="span1">10</span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> -->
+                <h3> Job opportunities.</h3>
+                <p> Voyagers provides many job vacancies for captains, engineers, chiefs, and many others. </p>
+                <div class="more">
+
+                    <a href="https://www.indeed.com/q-Sailor-jobs.html" target="_blank" class="button">More About Job Vacancies</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+<!-- news -->
+<!-- modal -->
+<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/boat3.jpg" alt="" />
+                    <p>Voyagers is a global shipping company that provides services in many different fields. It has a crew of +3000
+                        members varying between captains, engineers, labor, chiefs, deck staff and maintenance members. It transports
+                        natural oil and gas, dry bulk carriers, heavy materials, fertilizers, containers and provides many different
+                        services for local citizens and tourists. Voyagers plays a very important role in the economic development of
+                        the USA. Voyagers vision is to achieve the most valuable impact with wiser consumption of resources. Voyagers'
+                        ships are environmentally friendly as possible and safety insurance for our crew has our highest priority which
+                        all lead to the most reliable transportation. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner3.jpg" alt="" />
+                    <p>  Our vision comes from our values that are the core principles that guide our decision making, and ensure consistency in our employees’
+                        actions and behaviours. They represent our organization’s collective commitment to set, achieve and exceed ambitious targets.
+                        Progressive,
+                        Collaborative,
+                        Respectful,
+                        Responsible,
+                        Efficient.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner5.jpg" alt="" />
+                    <p>  We are committed to producing a target of 3.5 million barrels of oil per day by 2018,
+                        with due consideration of prevailing market conditions, and are constantly researching,
+                        developing and implementing innovative technologies and approaches that will enable us to enhance recovery and ensure improved production efficiency.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner4.jpg" alt="" />
+                    <p>  Voyagers is a trusted and reliable global energy provider.
+                        Our oil, gas, refined products and petrochemicals are sold on six continents; and positively impact economies and industries throughout the world. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal4" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/fish.jpg" alt="" />
+                    <p>  We recognize the responsibility we have towards our environment, and place great emphasis on the identification and mitigation of Health, Safety and Environment (HSE) risks. Each of our businesses are required to pass a stringent Health, Safety and Environmental Impact Assessment (HSEIA), and are subject to continuous environmental monitoring.
+
+                        We invest significantly in environmental projects, and continue to take steps to reduce flaring and Green House Gas (GHG) emissions. We are also responsible for a series of marine protection and development projects, including mangrove and seagrass plantation, coral reef rehabilitation, and the deployment of artificial reef and fish habitat structures. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal5" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner2.jpg" alt="" />
+                    <p>  Our people and contractors are at the heart of 100% HSE. They enforce and implement the Group HSE policy, identify and mitigate risks, and keep themselves and their colleagues safe. All ADNOC employees are empowered and obliged to intervene in unsafe situations, address the issue, and ensure that our policies and procedures are followed.
+
+                        Our people make sure that Abu Dhabi’s oil and gas industry remains one of the safest in the world, with a Lost Time Frequency Injury (LTIF) rate that is considerably lower than the global industry average.
+
+                        Yet there is no room for complacency: 100% HSE is a continuous and never-ending effort, whether we are at work, at home, or abroad. By embracing, believing in and being accountable for 100% HSE, we make sure everyone goes home safe every day. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal6" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner6.jpg" alt="" />
+                    <p> Transporting oil, gas and petroleum products is a challenge we meet every day to meet our customers’
+                        needs while upholding stringent environmental and safety standards.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal7" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner7.jpg" alt="" />
+                    <p>  We offer a broad-range of technical and non-technical career opportunities for experienced professionals that are looking to advance their careers in the energy sector.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal about-modal fade" id="myModal8" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"> Voyagers Shipping Company </h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="images/banner8.jpg" alt="" />
+                    <p> Our boats,yachts and ships are always prepared to ship you over the seas to see all the wonders inside the big ocean, and
+                        always on prepared for a new shipment request </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+g
+<!-- //modal -->
+<!-- gallery -->
+<div class="gallery" id="gallery">
+    <div class="container">
+        <h3 class="w3l_head w3l_head1"> Our Business </h3>
+        <div class="w3layouts_gallery_grids">
+            <ul class="w3l_gallery_grid" id="lightGallery">
+                <li data-title="General Cargo Vessels" data-desc="This field includes the bulk carriers,tankers, containers and reefer ships."
+                    data-src="images/car.jpg" data-responsive-src="images/car.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/cargo1.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Cargo </h4>
+                                <p class="tagline overtext"> Transporting cargo and heavy material. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Transportation" data-desc="Many of our ships are used to transport passengers across their cities or countries."
+                    data-src="images/pass.jpg" data-responsive-src="images/pass.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/PA.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Passengers Transport </h4>
+                                <p class="tagline overtext"> There are ships to take passengers from a place to another. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Tourism and exploring places purposes." data-desc="Many ships go on each sharp clock in a trip across different cities."
+                    data-src="images/to.jpg" data-responsive-src="images/to.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/Tourism.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Tourism </h4>
+                                <p class="tagline overtext"> Some ferry boats to go in boat trips. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Natural gas and oil mining and transporting." data-desc="Many ships are used to provide countries in different continents by natural oil and gas."
+                    data-src="images/o.jpg" data-responsive-src="images/o.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/oil.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Natural Gas and Oil </h4>
+                                <p class="tagline overtext"> Transporting gas and liquids across Earth. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Fertilizers and food trade." data-desc="Many of our ships are used for importing and exporting fertilizers and food."
+                    data-src="images/ferti.jpg" data-responsive-src="images/ferti.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/fert.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Fertilizers </h4>
+                                <p class="tagline overtext"> Fertilizers produces urea, the world’s most widely used nitrogen fertilizer. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="LNG Tankers" data-desc="An LNG carrier is a tank ship designed for transporting liquefied natural gas (LNG). As the LNG market grows rapidly, the fleet of LNG carriers continues to experience tremendous growth.."
+                    data-src="images/LNG1.jpg" data-responsive-src="images/LNG1.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/tanker.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> LNG Tankers </h4>
+                                <p class="tagline overtext"> Produces LNG, which is sold to international markets including Japan, and
+                                    processes gas, which is distributed to the UAE national grid. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Sour Gas Tankers" data-desc="Sour crude oil is crude oil containing a high amount of the impurity sulfur. It is common to find crude oil containing some impurities. When the total sulfur level in the oil is more than 0.5% the oil is called sour."
+                    data-src="images/y.jpg" data-responsive-src="images/so.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/afra.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Sour Gas </h4>
+                                <p class="tagline overtext"> Voyagers' Sour Gas is a market leader in sour gas field development and a major
+                                    international sulfur producer. We currently produce 1 billion standard cubic feet of gas per day. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Refining pertoleum and oil." data-desc="Oil refinery or petroleum refinery is an industrial process plant where crude oil is transformed and refined into more useful products such as petroleum naphtha and gasoline."
+                    data-src="images/fleet.jpg" data-responsive-src="images/fleet.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/so.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Refining Oil </h4>
+                                <p class="tagline overtext"> Refining Oil and Petroleum since 1990. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li data-title="Nature Friendly voyagers." data-desc="Our company has its own nature reservation for sea creatures."
+                    data-src="images/fish.jpg" data-responsive-src="images/fish.jpg">
+                    <div class="w3layouts_gallery_grid1 box">
+                        <a href="#">
+                            <img src="images/d.jpg" alt=" " class="img-responsive" />
+                            <div class="overbox">
+                                <h4 class="title overtext"> Voyagers' Nature Reserve </h4>
+                                <p class="tagline overtext"> Voyagers created the largest sea nature reserve in the US since 2000. </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/lightGallery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#lightGallery").lightGallery({
+            mode: "fade",
+            speed: 800,
+            caption: true,
+            desc: true,
+            mobileSrc: true
+        });
+    });
+</script>
+<!-- //gallery -->
+<!-- Stats -->
+<script>
+
+        var rootref = firebase.database().ref().child("Statistics");
+        rootref.on("child_added", snap => {
+            var CrewCount = snap.child("Crew").val();
+            var projects = snap.child("Completed_projects").val();
+            var clients = snap.child("Satisfied_Clients").val();
+            var creative = snap.child("Design_Creativity").val();
+            //alert("number:" + CrewCount);
+        });
+
+
+</script>
+
+<div class="stats w3layouts agileits" id="stats">
+    <div class="container">
+
+        <h3> Careers </h3>
+
+        <div class="stats-info w3layouts agileits">
+            <div class="col-md-3 col-sm-3 w3layouts agileits stats-grid stats-grid-1">
+                <div class="stats-img w3layouts agileits">
+                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                </div>
+                <div class='numscroller w3layouts agileits numscroller-big-bottom' data-slno='1' data-min='0' data-max=5000
+                     data-delay='5' data-increment="3">2777</div>
+                <p>Crew</p>
+            </div>
+            <div class="col-md-3 col-sm-3 w3layouts agileits stats-grid stats-grid-2">
+                <div class="stats-img w3layouts agileits">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </div>
+                <div class='numscroller w3layouts agileits numscroller-big-bottom' data-slno='1' data-min='0' data-max='9000'
+                     data-delay='5' data-increment="3">1295</div>
+                <p>Design Creativity</p>
+            </div>
+            <div class="col-md-3 col-sm-3 w3layouts agileits stats-grid stats-grid-3">
+                <div class="stats-img w3layouts agileits">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class='numscroller w3layouts agileits numscroller-big-bottom' data-slno='1' data-min='0' data-max='10000'
+                     data-delay='5' data-increment="3">1275</div>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="col-md-3 col-sm-3 w3layouts agileits stats-grid stats-grid-4">
+                <div class="stats-img w3layouts agileits">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </div>
+                <div class='numscroller w3layouts agileits numscroller-big-bottom' data-slno='1' data-min='0' data-max='8888'
+                     data-delay='5' data-increment="3">4000</div>
+                <p>Completed projects</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+</div>
+<!-- //Stats -->
+
+<!-- contact -->
+<div id="contact" class="contact jarallax">
+    <div class="container">
+        <h3 class="agileits-title">Contact Us & Feedback</h3>
+        <div class="clearfix"></div>
+        <div class="gal-btm">
+            <div class="map-home">
+                <div class="col-md-6 drop-pad sign-gd-two">
+                    <h3>Contact Info</h3>
+                    <p>If you have any inquiries, questions, suggestions or feedback, please don't hesitate to contact us.
+                        Email and phone are available. You can come by our official office on the below address.</p>
+                    <ul>
+                        <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><strong>Address</strong> : Park Avenue, Tin
+                            Gardens, <span>Paris.</span></li>
+                        <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><strong>Email</strong> : <a href="mailto:info@example.com">
+                            ayadwalaa@gmail.com , raghad2al@gmail.com</a></li>
+                        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><strong>Phone </strong> : +972 599 587 639</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 login-pad">
+                    <h3>Drop Us A Message</h3>
+                    <form action="#" method="get" name="sentMessage" id="contactForm" novalidate>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input type="text" class="form-control" placeholder="Name" id="sendername" required data-validation-required-message="Please enter your name.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input id="senderId" type="email" class="form-control" placeholder="Email" id="email" required
+                                       data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Subscribe to our Newsletter</label>
+                        <div class="control-group form-group">
+                            <div class="controls">
+									<textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required
+                                              data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button onclick="gomsg()" type="submit" class="btn btn-primary" >Send Message</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function gomsg() {
+        var fireReference5= firebase.database().ref('ContactUs/');
+        var SenderName = document.getElementById("sendername").value;
+        var SenderEmail = document.getElementById("senderId").value;
+        var MessageSent = document.getElementById("message").value;
+        firebase.database().ref('ContactUs/' + SenderName).set({
+            SenderName: SenderName,
+            Email: SenderEmail,
+            IssueOrMessage: MessageSent
+        });
+        alert("Message Sent!");
+    }
+</script>
+<!-- //contact -->
+<!-- Map -->
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722640373!2d2.27751730651281!3d48.85883773940494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!5e0!3m2!1sen!2sin!4v1488544982675"></iframe>
+</div>
+<!-- //Map -->
+<!-- Footer -->
+<div class="footer w3layouts agileits">
+    <div class="container">
+        <div class="col-md-3 col-sm-3 w3layouts agileits footer-grid footer-grid-1">
+            <ul>
+                <li class="w3layouts agileits"><a class="scroll w3layouts agileits" href="#about">About</a></li>
+                <li class="w3layouts agileits"><a class="scroll w3layouts agileits" href="#news">News</a></li>
+                <li class="w3layouts agileits"><a class="scroll w3layouts agileits" href="#gallery">Gallery</a></li>
+                <li class="w3layouts agileits"><a class="scroll w3layouts agileits" href="#stats"> Careers </a></li>
+                <li class="w3layouts agileits"><a class="scroll w3layouts agileits" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-3 w3layouts agileits footer-grid footer-grid-2">
+            <ul>
+                <li class="w3layouts agileits">CREATIVE DESIGN</li>
+                <li class="w3layouts agileits">BEST PROJECTS</li>
+                <li class="w3layouts agileits">FULL SUPPORT</li>
+                <li class="w3layouts agileits">BUSINESS GUARENTEED</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-sm-6 footer-grid w3layouts agileits footer-grid-3">
+            <p>Subscribe to our newsletter and we will inform you about our new promotions.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Email" name="Email" required="">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //Footer -->
+<!-- copyright -->
+<div class="copyright w3layouts agileits">
+    <p>&copy; 2017 Voyagers. All Rights Reserved </a></p>
+</div>
+<!-- copyright -->
+
+<!-- Slider-JavaScript -->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider, #slider1").responsiveSlides({
+            auto: true,
+            nav: true,
+            speed: 1500,
+            namespace: "callbacks",
+            pager: true,
+        });
+    });
+</script>
+<!-- //Slider-JavaScript -->
+
+<!-- Slide-To-Top JavaScript -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var defaults = {
+            containerID: 'toTop',
+            containerHoverID: 'toTopHover',
+            scrollSpeed: 100,
+            easingType: 'linear',
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<a href="#home" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;">
+		</span></a>
+<!-- //Slide-To-Top JavaScript -->
+
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<!-- //here ends scrolling icon -->
+
+
+
+<!-- js files for contact from validation -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+<!-- //js files for contact from validn -->
+
+
+<!-- Skills-why-Scroller-Effect-JavaScript -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- //Skills-why-Scroller-Effect-JavaScript -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head -->
+
+<head>
+    <title>Log in Form</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Food Signin Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <!-- //fonts -->
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+    <!-- //Font-Awesome-File-Links -->
+	
+	<!-- Google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- Google fonts -->
+
+</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+    <h1 class="title-agile text-center">Voyagers Log in</h1>
+    <div id= "login_div" class="content-w3ls">
+        <div class="content-bottom">
+			<h2>Sign In Here</h2>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" id="email_field" type="email" value="" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="password" id="password_field" type="Password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="check">
+                        <label class="checkbox w3l">
+                            <input type="checkbox" onclick="myFunction()">
+                            <i> </i>Show password</label>
+                    </div>
+                    <!-- script for show password -->
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
+                    <!-- //script for show password -->
+                </div>
+                <div class="wthree-field">
+                    <input onclick="login()" id="saveForm" name="saveForm" type="submit" value="Sign in" />
+
+                </div>
+
+                <ul class="list-login">
+                    <li class="switch-agileits">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            Keep me in
+                        </label>
+                    </li>
+                    <li>
+                        <a href="#" class="text-right">Forgot password?</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>© 2018 Voyagers Sign In Form. All rights reserved
+        </p>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCmqAJWuUFtNClqheBolydpycxO1k0WQ5o",
+            authDomain: "voyagers-600ae.firebaseapp.com",
+            databaseURL: "https://voyagers-600ae.firebaseio.com",
+            projectId: "voyagers-600ae",
+            storageBucket: "",
+            messagingSenderId: "810913473943"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</body>
+<!-- //Body -->
+</html>
